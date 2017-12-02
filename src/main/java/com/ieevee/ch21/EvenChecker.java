@@ -1,6 +1,4 @@
-package com.ieevee;
-
-import com.sun.tools.example.debug.tty.EventHandler;
+package com.ieevee.ch21;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -20,7 +18,6 @@ public class EvenChecker implements Runnable {
             }
         }
     }
-
 
     public static void test(IntGenerater intGenerater, int number) {
         ExecutorService executorService = Executors.newCachedThreadPool();

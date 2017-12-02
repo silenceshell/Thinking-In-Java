@@ -1,4 +1,4 @@
-package com.ieevee;
+package com.ieevee.ch21;
 
 
 public abstract class IntGenerater {

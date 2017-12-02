@@ -1,4 +1,4 @@
-package com.ieevee;
+package com.ieevee.ch21;
 
 import java.io.IOException;
 import java.io.InputStream;
