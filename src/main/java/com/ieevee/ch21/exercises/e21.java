@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * exercise 21
  */
-public class e21 {
+public class E21 {
     public static void main(String args[]) {
         Integer x = 1;
         ExecutorService service = Executors.newCachedThreadPool();

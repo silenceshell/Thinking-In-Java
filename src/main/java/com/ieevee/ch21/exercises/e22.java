@@ -1,7 +1,6 @@
 package com.ieevee.ch21.exercises;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by hubaotao on 2017/12/2.
  */
-public class e22 {
+public class E22 {
     public static void main(String[] args) {
         Change change = new Change(false);
 
