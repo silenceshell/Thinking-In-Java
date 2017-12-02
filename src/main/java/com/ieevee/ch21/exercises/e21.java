@@ -1,4 +1,4 @@
-package com.ieevee.ch21;
+package com.ieevee.ch21.exercises;
 
 
 import java.util.concurrent.ExecutorService;
