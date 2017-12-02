@@ -1,7 +1,7 @@
 package com.ieevee.ch21;
 
 /**
- * Created by hubaotao on 2017/11/19.
+ * ShareResource
  */
 public class ShareResource {
     public static void main(String[] args) {

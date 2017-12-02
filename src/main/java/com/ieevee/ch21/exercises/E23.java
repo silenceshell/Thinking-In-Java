@@ -1,22 +1,24 @@
-package com.ieevee.ch21;
+package com.ieevee.ch21.exercises;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
- * WaxOnMatic
+ * exercise 23
  */
 class Car {
     private boolean waxed = false;
-//    private boolean buffling = false
+    //    private boolean buffling = false
     synchronized void Wax() {
         waxed = true;
-        notifyAll();
+//        notifyAll();
+        notify();
     }
     synchronized void Buffed() {
         waxed = false;
-        notifyAll();
+//        notifyAll();
+        notify();
     }
     synchronized void WaitForWax() throws InterruptedException{
         while (!waxed) {
@@ -65,7 +67,7 @@ class WaxOff implements Runnable {
                 car.Buffed();
                 System.out.println("wait for wax!");
                 car.WaitForWax();
-        }
+            }
         } catch (InterruptedException e) {
 //            e.printStackTrace();
             System.out.println("thread is interrupted, exit now.");
@@ -73,7 +75,7 @@ class WaxOff implements Runnable {
         System.out.println("wax off end");
     }
 }
-public class WaxOnMatic {
+public class E23 {
     public static void main(String[] args) {
         Car car = new Car();
         ExecutorService executorService = Executors.newCachedThreadPool();

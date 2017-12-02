@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by hubaotao on 2017/12/2.
+ * exercise 22
  */
 public class E22 {
     public static void main(String[] args) {
