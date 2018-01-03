@@ -28,7 +28,7 @@ public class Pool<T> {
         }
     }
 
-    private T checkOut() {
+    T checkOut() {
         try {
             semaphore.acquire();
             return getItem();
@@ -48,7 +48,7 @@ public class Pool<T> {
         return null;
     }
 
-    private void checkIn(T item) {
+    void checkIn(T item) {
         if (putItem(item)) {
             semaphore.release();
         }

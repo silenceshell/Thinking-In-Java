@@ -13,7 +13,7 @@ public class Fat {
         }
     }
 
-    private void operation() {
+    void operation() {
         System.out.println(this);
     }
 
